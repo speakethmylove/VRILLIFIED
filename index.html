@@ -33,7 +33,58 @@
 </head>
 <body>
     <div class="container">
-        <img class="gif" src= alt="GIF" />
+        <img class="gif" src=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with GIF</title>
+    <style>
+        body {
+            background-color: #000; /* Set background to black */
+            color: #fff; /* Text color white */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .gif {
+            width: 100%;
+            height: auto;
+        }
+        audio {
+            margin-top: 20px;
+            background-color: #000; /* Keeps the audio player black */
+            color: #fff; /* Text color inside the audio player */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="gif" src=alt="GIF" />
+        <audio controls autoplay>
+            <source src="your-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        // Automatically play music when page loads
+        window.onload = () => {
+            const audio = document.querySelector('audio');
+            audio.play();
+        };
+    </script>
+</body>
+</html>
+ alt="GIF" />
         <audio controls autoplay>
             <source src="your-song.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
